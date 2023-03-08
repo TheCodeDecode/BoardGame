@@ -74,13 +74,13 @@ function Grid(element, initaliSize,_timeLeft, callback) {
     var downloadTimer = setInterval(function(){
       if(timeleft <= 0){
         clearInterval(downloadTimer);
-        document.getElementById("counter").innerHTML = "Finished";
+        // document.getElementById("counter").innerHTML = "Finished";
         resetGrid(false);
         initialGridSize = initaliSize;
         generateGrid(initialGridSize);
   
       } else {
-        document.getElementById("counter").innerHTML = timeleft + " seconds remaining";
+        // document.getElementById("counter").innerHTML = timeleft + " seconds remaining";
       }
       timeleft -= 1;
     }, 1000);
